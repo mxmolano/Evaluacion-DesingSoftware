@@ -1,0 +1,27 @@
+{
+  "db_engine": "mysql",
+  "host": "localhost",
+  "port": 3306,
+  "user": "root",
+  "password": "",
+  "database": "mihuerta_db",
+
+  "_db_engine": "postgres",
+  "_host": "localhost",
+  "_port": 5432,
+  "_user": "postgres",
+  "_password": "12345",
+  "_database": "mihuerta_db",
+
+  "api_base": "http://localhost:8000",
+  "endpoints": {
+    "create": "/registro",
+    "read_all": "/registro",
+    "read_one": "/registro/{id}",
+    "update": "/registro/{id}",
+    "delete": "/registro/{id}"
+
+  }
+}
+
+

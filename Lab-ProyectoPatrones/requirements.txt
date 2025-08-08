@@ -1,0 +1,6 @@
+
+fastapi
+psycopg2
+pymysql
+requests
+uvicorn

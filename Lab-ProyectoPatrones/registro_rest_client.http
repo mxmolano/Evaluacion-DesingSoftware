@@ -1,0 +1,32 @@
+### Crear un nuevo registro
+POST http://localhost:8000/registro/
+Content-Type: application/json
+
+{
+  "nombre": "rosa ",
+  "apellido": "Molano ",
+  "nacimiento": "2000-12-12",
+  "email": "rr@uniempresarial.edu.co",
+  "contraseña": "12345678"
+}
+
+### Obtener todos los registros
+GET http://localhost:8000/registro/
+
+### Obtener registro por ID
+GET http://localhost:8000/registro/22
+
+### Actualizar un registro
+PUT http://localhost:8000/registro/22
+Content-Type: application/json
+
+{
+  "nombre": "rosa",
+  "apellido": "Molano",
+  "nacimiento": "2000-12-12",
+  "email": "rosita@outlook.edu.co",
+  "contraseña": "12345678"
+}
+
+### Eliminar un registro
+DELETE http://localhost:8000/registro/11

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>Gestión de Registros</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="navbar">
+        <a href="#" onclick="mostrarSeccion('crear')">Crear Registro</a>
+        <a href="#" onclick="mostrarSeccion('lista')">Lista de Registros</a>
+        <a href="#" onclick="mostrarSeccion('acciones')">Acciones</a>
+    </div>
+
+    <div id="crear" class="seccion">
+        <h2>Crear Registro</h2>
+        <form id="formRegistro">
+            <input type="text" id="nombre" placeholder="Nombre" required />
+            <input type="text" id="apellido" placeholder="Apellido" required />
+            <input type="date" id="nacimiento" placeholder="Nacimiento" required />
+            <input type="email" id="email" placeholder="Email" required />
+            <input type="password" id="contraseña" placeholder="Contraseña" required />
+            <button type="submit">Guardar</button>
+        </form>
+    </div>
+
+    <div id="lista" class="seccion">
+        <h2>Lista de Registros</h2>
+        <ul id="listaRegistros"></ul>
+    </div>
+
+    <div id="acciones" class="seccion">
+        <h2>Buscar / Actualizar / Eliminar</h2>
+        <input type="text" id="idBuscar" placeholder="ID del registro" />
+        <button onclick="buscarRegistro()">Buscar</button>
+        <input type="text" id="nombreAccion" placeholder="Nombre" />
+        <input type="text" id="apellidoAccion" placeholder="Apellido" />
+        <input type="date" id="nacimientoAccion" placeholder="Nacimiento" />
+        <input type="email" id="emailAccion" placeholder="Email" />
+        <input type="password" id="contraseñaAccion" placeholder="Contraseña" />
+        <button onclick="actualizarRegistro()">Actualizar</button>
+        <button onclick="eliminarRegistro()">Eliminar</button>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
