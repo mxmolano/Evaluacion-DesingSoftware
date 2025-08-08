@@ -26,6 +26,7 @@ Diseñar e implementar un nuevo módulo funcional dentro del sistema base, mante
 
 El módulo fue integrado en la carpeta `/modulos/registro/` respetando la estructura del proyecto original:
 
+````
 /modulos/registro/
 ├── acceso_datos/
 │ ├── registro_dao.py # Lógica de acceso a base de datos (CRUD)
@@ -36,7 +37,7 @@ El módulo fue integrado en la carpeta `/modulos/registro/` respetando la estruc
 ├── router/
 │ └── registro_router.py # Endpoints de la API REST
 └── notificaciones/ # Implementación opcional de Observer
-
+`````
 
 ---
 
