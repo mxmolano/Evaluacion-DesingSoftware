@@ -126,9 +126,6 @@ Incluye:
 
 ---
 
-## 📦 Repositorio
-🔗 [Enlace al repositorio GitHub con el módulo integrado](https://github.com/usuario/repositorio)
-
 ---
 
 ## 📜 Licencia
